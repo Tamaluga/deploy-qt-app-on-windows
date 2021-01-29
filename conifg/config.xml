@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>QT-Example-App</Name>
+    <Version>1.0.0</Version>
+    <Title>QT-Example-App Installer</Title>
+    <Publisher>Company Name</Publisher>
+    <StartMenuDir>QT-Example-App</StartMenuDir>
+    <TargetDir>@HomeDir@/QT-Example-App</TargetDir>
+</Installer>
