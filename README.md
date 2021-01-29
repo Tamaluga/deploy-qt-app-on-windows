@@ -6,6 +6,15 @@ All information can be found here:
 - [Qt for Windows - Deployment](https://doc.qt.io/qt-5/windows-deployment.html)  
 - [Tutorial: Creating an Installer](https://doc.qt.io/qtinstallerframework/ifw-tutorial.html)
 
+Folder sturcture: 
+
+    .
+    ├── config                   # Configuration for installer creation
+    └── packages                 # 
+        └──  com.vendor.product  # 
+            ├── data             # Executable and dependencies
+            └── meta             # Package configuration and license file
+
 ## Prerequisites
 
 - Installation of the QT Framework
@@ -15,7 +24,7 @@ All information can be found here:
 
 ## Preparations
 
-- Build Qt application with Qt-Creator (release)
+- Build the application to deploy with Qt-Creator (example-app.exe)
 - Copy application dependencies with the 'windeployqt' tool to the deploying structure
   - Copy executable example-app.exe to the 'package\com.vendor.product\data' folder
   - Get all dependencies of the application with the 'windeployqt' tool:
